@@ -1,39 +1,23 @@
-Synap / EBICS
+EBICS
 =============
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Synap/EBICS/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Synap/EBICS/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/Synap/EBICS/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Synap/EBICS/?branch=master)
-[![Build Status](https://travis-ci.org/Synap/EBICS.php.svg?branch=master)](https://travis-ci.org/Synap/EBICS.php)
-[![Gitter](https://badges.gitter.im/Synap/EBICS.php.svg)](https://gitter.im/Synap/EBICS.php?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![Flattr this](http://button.flattr.com/flattr-badge-large.png)](https://flattr.com/submit/auto?fid=2dgyn7&url=https%3A%2F%2Fgithub.com%2Fsynap%2Febics.php)
-
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/0adf2438-560e-4dae-899d-7ea44230cafb/big.png)](https://insight.sensiolabs.com/projects/0adf2438-560e-4dae-899d-7ea44230cafb)
+Fork of [Synap/EBICS.php](https://github.com/Synap/EBICS.php)
 
 
+A PHP library project for the EBICS protocol (French version)
 
+EBICS is THE standard of the moment for everything related to the automation of bank exchanges. However, as this protocol is still young, there are few free licensed libraries. In addition, some variants exist between French banks and German banks.
 
-Un projet de bibliothèque PHP pour le protocole EBICS (version française)
+This project aims to develop a PHP library compatible with French banks in order to offer developers an easily exploitable software component for their accounting, e-commerce, or other management applications projects ...
 
-EBICS est LE standard du moment pour tout ce qui relève de l'automatisation des échanges bancaires. Cependant, ce
-protocole étant encore jeune, il existe peu de bibliothèques sous licence libre. Par ailleurs, quelques variantes
-existent entre les banques françaises et les banques allemandes.
+The purpose of Synap System is to encourage and assist the development of free software. As a result, the license for this project is GNU Affero General Public.
 
-Ce projet vise à développer une bibliothèque PHP compatible avec les banques françaises afin de proposer aux développeurs
-un composant logiciel facilement exploitable pour leurs projets d'applications de gestion comptable, e-commerce, ou
-autre...
+A fee-based dual license system for companies that would find the GNU Affero General Public license too restrictive is also being considered. Contact us if you are interested.
 
-La raison d'être de Synap System est d'encourager et d'aider le développement du logiciel libre. De ce fait, la licence
-retenue pour ce projet est la [GNU Affero General Public](https://www.gnu.org/licenses/agpl-3.0.html).
+Due to lack of funding, no release date is planned for the moment and the development is done over the water.
 
-Un système de double licence payante pour les entreprises qui jugeraient la licence GNU Affero General Public trop
-contraignante est aussi envisagé. Contactez-nous si cela vous intéresse.
+If you wish to help us financially, if you have a suggestion or wish to contribute, you can send an e-mail to the following address: contact@synap.fr or on gitter.im
 
-Faute de financement, aucune date de sortie n'est prévue pour le moment et le développement se fait au fil de l'eau.
-
-Si vous souhaitez nous aider financièrement, si vous avez une suggestion ou si vous souhaitez contribuer, vous pouvez
-envoyer un e-mail à l'adresse suivante: contact@synap.fr ou sur [gitter.im](https://gitter.im/Synap/EBICS?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
-
-Dons en bitcoins acceptés: `1isDyjadd2bvEWhADc2URZedvtnQnC3e2`
 
 Installation
 ============
@@ -44,9 +28,7 @@ Ce projet nécessite [composer](https://getcomposer.org/) pour l'installation de
     cd EBICS.php
     composer install
 
-Une fois cette opération réalisée copiez le fichier `parameters.json-dist` dans un fichier `parameters.json` et éditez-le pour y insérer les paramètres de connexion au serveur EBICS.
-
-Ensuite ajoutez les clés privées et les certificats selon la liste suivante:
+Once this is done, copy the `parameters.json-dist` file to an parameters.json file and edit it to insert the EBICS server connection parameters.
 
 - `test/fixtures/keys/A005/cert.pem`
 - `test/fixtures/keys/A005/key.pem`
@@ -55,13 +37,13 @@ Ensuite ajoutez les clés privées et les certificats selon la liste suivante:
 - `test/fixtures/keys/X002/cert.pem`
 - `test/fixtures/keys/X002/key.pem`
 
-Vous pouvez alors tester les commandes suivantes:
+You can then test the following commands:
 
 - `app/console ebics:hev`
 - `app/console ebics:hia`
 - `app/console ebics:ini`
 
-Attention! Ce projet est en cours de développement. N'utilisez ces commandes qu'à des fins de test et à vos risques et périls.
+Warning! This project is under development. Use these commands only for testing purposes and at your own risk.
 
 Liens
 =====
